@@ -4,6 +4,28 @@
   &-1 {
     margin: rem-calc(16);
   }
+
+  &-top {
+    &-1 {
+      margin-top: rem-calc(16);
+    }
+
+    &-2 {
+      margin-top: rem-calc(32);
+    }
+
+    &-4 {
+      margin-top: rem-calc(64);
+
+      &-half {
+        margin-top: rem-calc(72);
+      }
+    }
+
+    &-5 {
+      margin-top: rem-calc(80);
+    }
+  }
 }
 
 .padding {
