@@ -1,8 +1,20 @@
+@import "../../assets/styles/globals";
+
 .hero-image {
+  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
     url(../../assets/images/Highend/23722674_2024010107856169_2365836349674606210_n.jpg);
   background-position: 0 50%;
   background-size: cover;
+  display: flex;
+  justify-content: center;
   height: 75vh;
   width: 100%;
+
+  &__image-container {
+    background-color: $white;
+    border-radius: rem-calc(13);
+    // box-shadow: 0 0 rem-calc(37) rem-calc(37) rgba(0, 0, 0, 0.5);
+    width: rem-calc(200);
+  }
 }
