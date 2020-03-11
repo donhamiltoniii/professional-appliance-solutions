@@ -1,7 +1,25 @@
 @import "./globals";
 
+.margin {
+  &-1 {
+    margin: rem-calc(16);
+  }
+}
+
 .padding {
   &-1 {
     padding: rem-calc(16);
+  }
+
+  &-bottom {
+    &-half {
+      padding-bottom: rem-calc(8);
+    }
+  }
+
+  &-top {
+    &-half {
+      padding-top: rem-calc(8);
+    }
   }
 }

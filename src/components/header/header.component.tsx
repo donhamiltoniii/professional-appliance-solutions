@@ -7,7 +7,7 @@ import logo from "../../assets/images/PAS Logo/PAS_Letterhead-09.png";
 const Header = () => {
   return (
     <header className="header padding-1">
-      <figure className="header__logo-container">
+      <figure className="header__logo-container padding-1 padding-bottom-half padding-top-half">
         <img
           alt="Professional Appliance Solutions logo"
           className="header__logo"
