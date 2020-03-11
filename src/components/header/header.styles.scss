@@ -1,0 +1,13 @@
+@import "../../assets/styles/globals";
+
+.header {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: $white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &__logo-container {
+    width: rem-calc(175);
+  }
+}

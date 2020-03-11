@@ -1,0 +1,9 @@
+//Colors
+$white: #f9f9f9;
+
+//Measures
+$base-font-size: 16;
+
+@function rem-calc($size-in-pixels) {
+  @return #{$size-in-pixels / $base-font-size}rem;
+}

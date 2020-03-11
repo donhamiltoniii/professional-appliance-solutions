@@ -1,0 +1,7 @@
+@import "./globals";
+
+.padding {
+  &-1 {
+    padding: rem-calc(16);
+  }
+}
