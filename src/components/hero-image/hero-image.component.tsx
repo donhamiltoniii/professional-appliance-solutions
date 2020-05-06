@@ -10,6 +10,10 @@ const HeroImage = () => {
       <figure className="hero-image__image-container margin-top-4-half">
         <img alt="PAS logo" src={logo} />
       </figure>
+      <p>
+        Professional appliance delivery and installation, insured and factory
+        trained.
+      </p>
     </div>
   );
 };
