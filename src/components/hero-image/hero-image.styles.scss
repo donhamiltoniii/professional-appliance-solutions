@@ -15,7 +15,7 @@
   &__image-container {
     background-color: $white;
     border-radius: rem-calc(13);
-    // box-shadow: 0 0 rem-calc(37) rem-calc(37) rgba(0, 0, 0, 0.5);
+    margin-top: -2rem;
     width: rem-calc(200);
   }
 }

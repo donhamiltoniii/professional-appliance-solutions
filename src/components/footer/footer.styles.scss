@@ -1,0 +1,44 @@
+.main-footer {
+  align-items: center;
+  background-color: #143787;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-bottom: 3rem;
+
+  &__contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    div {
+      & > *:first-child {
+        margin-right: 1rem;
+      }
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__copy {
+    font-size: 0.625rem;
+    margin-top: 2rem;
+  }
+
+  &__hours {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  &__social-media {
+    font-size: 2rem;
+    & > *:first-child {
+      margin-right: 1rem;
+    }
+  }
+}

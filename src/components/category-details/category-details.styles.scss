@@ -1,0 +1,20 @@
+.category-details {
+  padding-bottom: 3rem;
+
+  &__container {
+    @media (min-width: 50rem) {
+      display: flex;
+    }
+
+    & > * {
+      @media (min-width: 50rem) {
+        flex: 1 1 0;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+}

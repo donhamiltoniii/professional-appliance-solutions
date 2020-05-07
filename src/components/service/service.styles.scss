@@ -1,3 +1,34 @@
 .service {
+  color: #fff;
   padding: 2rem 0;
+
+  &__content {
+    @media (min-width: 30rem) {
+      display: flex;
+    }
+
+    &--odd {
+      @media (min-width: 30rem) {
+        flex-direction: row-reverse;
+      }
+
+      & .service__content-container {
+        @media (min-width: 30rem) {
+          text-align: right;
+        }
+      }
+    }
+
+    & > * {
+      @media (min-width: 30rem) {
+        flex: 1 1 0;
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 }

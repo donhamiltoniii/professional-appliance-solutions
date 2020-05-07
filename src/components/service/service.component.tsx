@@ -19,13 +19,17 @@ const Service: React.FC<ServiceProps> = ({ content, img, isEven, title }) => (
     }}
   >
     <Container>
-      <section className="service__content-container">
-        <h3 className="service__title">{title}</h3>
-        <p className="service__content">{content}</p>
-      </section>
-      <figure className="service__image-container">
-        <img className="service__image" src={img} alt={`${title}`} />
-      </figure>
+      <div
+        className={`service__content${!isEven ? " service__content--odd" : ""}`}
+      >
+        <figure className="service__image-container">
+          <img className="service__image" src={img} alt={`${title}`} />
+        </figure>
+        <section className="service__content-container">
+          <h3 className="service__title">{title}</h3>
+          <p className="service__content">{content}</p>
+        </section>
+      </div>
     </Container>
   </div>
 );

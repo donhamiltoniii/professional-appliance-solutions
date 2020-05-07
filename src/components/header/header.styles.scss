@@ -1,11 +1,10 @@
 @import "../../assets/styles/globals";
 
 .header {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #fff;
   color: $white;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  display: flex;
+  justify-content: center;
 
   &__logo-container {
     width: rem-calc(225);
