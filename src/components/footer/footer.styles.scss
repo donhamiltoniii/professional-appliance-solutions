@@ -17,6 +17,13 @@
       & > *:first-child {
         margin-right: 1rem;
       }
+
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+        transition: 0.3s;
+      }
     }
 
     h4 {

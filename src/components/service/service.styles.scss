@@ -3,24 +3,24 @@
   padding: 2rem 0;
 
   &__content {
-    @media (min-width: 30rem) {
+    @media (min-width: 40rem) {
       display: flex;
     }
 
     &--odd {
-      @media (min-width: 30rem) {
+      @media (min-width: 40rem) {
         flex-direction: row-reverse;
       }
 
       & .service__content-container {
-        @media (min-width: 30rem) {
+        @media (min-width: 40rem) {
           text-align: right;
         }
       }
     }
 
     & > * {
-      @media (min-width: 30rem) {
+      @media (min-width: 40rem) {
         flex: 1 1 0;
         margin: 0 1rem;
       }

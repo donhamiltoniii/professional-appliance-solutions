@@ -21,8 +21,8 @@ const Footer = () => {
         </a>
       </div>
       <div className="main-footer__hours">
-        <span>M-F: 8a-4p</span>
-        <span>S&S: Closed</span>
+        <span>M - F: 8a-4p</span>
+        <span>S & S: Closed</span>
       </div>
       <p className="main-footer__copy">
         &copy; {new Date().getFullYear} Professional Appliance Solutions
