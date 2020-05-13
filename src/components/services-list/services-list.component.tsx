@@ -19,7 +19,7 @@ const ServicesList = () => {
       title: "Single Family",
       img: SingleFamilyImage,
       content:
-        "Our ability to work fast. efficient, and accurately separates us from other install services. By combing proprietary methods and industry standards we are able to accomplish several full house installs per day. Our capacity to work with situations that are not ideal or a “perfect scenario” allows us to adapt to a customer’s individual needs.",
+        "Our ability to work fast. efficient, and accurately separates us from other install services. By combining proprietary methods and industry standards we are able to accomplish several full house installs per day. Our capacity to work with situations that are not ideal or a “perfect scenario” allows us to adapt to a customer’s individual needs.",
     },
     {
       title: "Multi Family",
