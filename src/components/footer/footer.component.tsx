@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="main-footer__contact">
         <h4>Contact Us</h4>
         <div>
-          <a href="tel:6143484706">Call</a>
-          <a href="email:Office@professionalappliancesolutions.com">Email</a>
+          <a href="tel:6143487995">Call</a>
+          <a href="mailto:Office@professionalappliancesolutions.com">Email</a>
         </div>
       </div>
       <div className="main-footer__social-media">
