@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./hero-image.styles.scss";
 
 import logo from "../../assets/images/PAS Logo/PAS_Blue_Web.png";

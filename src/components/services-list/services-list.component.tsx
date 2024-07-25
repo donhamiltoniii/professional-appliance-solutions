@@ -1,5 +1,3 @@
-import React from "react";
-
 import HighendImage from "../../assets/images/Highend/6-26-19 Derrick Layer - Taggert 2.jpg";
 import MultiFamilyImage from "../../assets/images/Multi Family/98657.jpeg";
 import SingleFamilyImage from "../../assets/images/Single Family/52341.jpeg";

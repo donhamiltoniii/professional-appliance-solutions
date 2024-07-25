@@ -3,11 +3,7 @@ import "./header.styles.scss";
 import logo from "../../assets/images/PAS Logo/PAS_Letterhead-09.png";
 import { ReactNode } from "react";
 
-type HeaderProps = {
-  openModal: () => void;
-};
-
-const Header = ({ openModal }: HeaderProps): ReactNode => {
+const Header = (): ReactNode => {
   return (
     <header className="header padding-1">
       <figure className="header__logo-container padding-1 padding-bottom-half padding-top-half">
