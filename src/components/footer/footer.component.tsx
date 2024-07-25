@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 import "./footer.styles.scss";
 
 const Footer = () => {
@@ -17,13 +20,13 @@ const Footer = () => {
           aria-label="facebook"
           href="https://www.facebook.com/professionalappliancesolutions/"
         >
-          <i className="fa fa-facebook" />
+          <FontAwesomeIcon icon={faFacebookF} />
         </a>
         <a
           aria-label="instagram"
           href="https://www.instagram.com/proappliancesolutions/"
         >
-          <i className="fa fa-instagram" />
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
       <div className="main-footer__hours">
