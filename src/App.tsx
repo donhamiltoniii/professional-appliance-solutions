@@ -56,9 +56,9 @@ function App() {
 
   return (
     <>
-      <Modal isOpen={isOpen} hasCloseBtn onClose={closeModal}>
+      {/* <Modal isOpen={isOpen} hasCloseBtn onClose={closeModal}>
         <p>wtf?</p>
-      </Modal>
+      </Modal> */}
       <Header openModal={openModal} />
       <HeroImage />
       <ServicesList />

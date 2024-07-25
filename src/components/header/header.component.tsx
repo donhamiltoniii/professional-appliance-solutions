@@ -17,7 +17,7 @@ const Header = ({ openModal }: HeaderProps): ReactNode => {
           src={logo}
         />
       </figure>
-      <button onClick={openModal}>Order Now</button>
+      {/* <button onClick={openModal}>Order Now</button> */}
     </header>
   );
 };
