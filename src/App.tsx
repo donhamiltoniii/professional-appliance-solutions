@@ -1,4 +1,3 @@
-import { FormEvent, useState } from "react";
 import CategoryDetails from "./components/category-details/category-details.component";
 import Footer from "./components/footer/footer.component";
 import Header from "./components/header/header.component";
@@ -6,7 +5,6 @@ import HeroImage from "./components/hero-image/hero-image.component";
 import ServicesList from "./components/services-list/services-list.component";
 
 import "./App.scss";
-import { Modal } from "./components/modal";
 
 function App() {
   const categories = [
@@ -36,30 +34,9 @@ function App() {
     },
   ];
 
-  const [isOpen, setOpen] = useState(false);
-
-  const formSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    const data = new FormData(event.target as HTMLFormElement);
-
-    console.log({ data });
-  };
-
-  const closeModal = () => {
-    setOpen(false);
-  };
-
-  const openModal = () => {
-    setOpen(true);
-  };
-
   return (
     <>
-      {/* <Modal isOpen={isOpen} hasCloseBtn onClose={closeModal}>
-        <p>wtf?</p>
-      </Modal> */}
-      <Header openModal={openModal} />
+      <Header />
       <HeroImage />
       <ServicesList />
       <CategoryDetails categories={categories} />

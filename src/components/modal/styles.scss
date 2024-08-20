@@ -1,6 +1,26 @@
 .modal {
-  &::backdrop {
-    background-color: rgba($color: #000000, $alpha: 0.5);
-    height: 100%;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  inset: 0; /* inset sets all 4 values (top right bottom left) much like how we set padding, margin etc., */
+  justify-content: center;
+  overflow: hidden;
+  padding: 40px 20px 20px;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+
+  &__close-button {
+    display: flex;
+  }
+
+  &__content {
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
   }
 }

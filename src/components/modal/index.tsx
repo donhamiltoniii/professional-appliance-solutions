@@ -1,38 +1,41 @@
-import { ReactNode, useEffect, useRef, useState } from "react";
-
+import { FC, ReactNode, useEffect } from "react";
 import "./styles.scss";
+import { ReactPortal } from "../react-portal";
 
 type ModalProps = {
-  isOpen: boolean;
-  hasCloseBtn?: boolean;
-  onClose: () => void;
   children: ReactNode;
+  handleClose: () => void;
+  isOpen: boolean;
 };
 
-export const Modal: React.FC<ModalProps> = ({
-  isOpen,
-  hasCloseBtn,
-  onClose,
-  children,
-}) => {
-  const handleCloseModal = () => {
-    onClose();
-  };
+export const Modal: FC<ModalProps> = ({ children, isOpen, handleClose }) => {
+  useEffect(() => {
+    const closeOnEscapeKey = (e: KeyboardEvent) =>
+      e.key === "Escape" ? handleClose() : null;
+    document.body.addEventListener("keydown", closeOnEscapeKey);
+    return () => {
+      document.body.removeEventListener("keydown", closeOnEscapeKey);
+    };
+  }, [handleClose]);
 
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLDialogElement>) => {
-    if (event.key === "Escape") {
-      handleCloseModal();
-    }
-  };
+  if (!isOpen) return null;
 
   return (
-    <dialog className="modal" onKeyDown={handleKeyDown} open={isOpen}>
-      {hasCloseBtn && (
-        <button className="modal-close-btn" onClick={handleCloseModal}>
-          Close
+    <ReactPortal wrapperId="react-portal-modal-container">
+      <div className="modal">
+        <button onClick={handleClose} className="modal__close-btn">
+          <span
+            style={{
+              display: "inline-block",
+              lineHeight: 0.6,
+              rotate: "45deg",
+            }}
+          >
+            +
+          </span>
         </button>
-      )}
-      {children}
-    </dialog>
+        <div className="modal__content">{children}</div>
+      </div>
+    </ReactPortal>
   );
 };
