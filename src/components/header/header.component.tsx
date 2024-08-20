@@ -6,14 +6,13 @@ import { ReactNode } from "react";
 const Header = (): ReactNode => {
   return (
     <header className="header padding-1">
-      <figure className="header__logo-container padding-1 padding-bottom-half padding-top-half">
+      <figure className="header__logo-container">
         <img
           alt="Professional Appliance Solutions logo"
           className="header__logo"
           src={logo}
         />
       </figure>
-      {/* <button onClick={openModal}>Order Now</button> */}
     </header>
   );
 };
